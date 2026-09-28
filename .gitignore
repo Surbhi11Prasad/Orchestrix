@@ -1,0 +1,31 @@
+# IntelliJ
+.idea/
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# macOS
+.DS_Store
+
+# Terraform
+terraform/.terraform/
+terraform/terraform.tfstate
+terraform/terraform.tfstate.*
+terraform/terraform.tfvars
+
+# Root terraform state (if any)
+terraform.tfstate
+terraform.tfstate.*
+*.tfstate
+*.tfstate.*
+
+crash.log
+
+
+# Maven
+target/
+**/target/
+# Local Kubernetes credentials (commit only secret.example.yaml)
+kubernetes/**/secret.yaml
